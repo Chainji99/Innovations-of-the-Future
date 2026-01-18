@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>นวัตกรรมแห่งอนาคต ด้านอวกาศ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.6s ease;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .slide.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .slide h1 {
+            font-size: 2.5rem;
+            color: #ff4444;
+            margin-bottom: 0.5rem;
+        }
+        .slide h2 {
+            font-size: 1.8rem;
+            color: #aaa;
+            margin-bottom: 1.2rem;
+        }
+        .slide p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .slide img {
+            max-width: 60%;
+            max-height: 40vh;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+            margin-top: 1rem;
+        }
+        .footer {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 0 5px;
+        }
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: background 0.3s;
+        }
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        #prev { left: 20px; }
+        #next { right: 20px; }
+        .slide-number {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- สไลด์ 1 -->
+<div class="slide active">
+    <h1>Innovations of the Future</h1>
+    <h2>Space</h2>
+    <p style="font-size: 1.5rem; color: #ffcc00;">🚀 Spacecraft • New Planets • Life Outside the Earth</p>
+    <div class="footer">14 January 2026</div>
+    <div class="slide-number">1 / 8</div>
+</div>
+
+<!-- สไลด์ 2 -->
+<div class="slide">
+    <h2>Why is "Space" important?</h2>
+    <p>• เป็นแหล่งความรู้ใหม่ทางวิทยาศาสตร์<br>
+       • ช่วยแก้ปัญหาบนโลก เช่น การเปลี่ยนแปลงสภาพภูมิอากาศ<br>
+       • เปิดโอกาสทางเศรษฐกิจ (Space Economy)<br>
+       • สนับสนุนการอยู่รอดของมนุษยชาติในระยะยาว</p>
+    <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Earth from space">
+    <div class="slide-number">2 / 8</div>
+</div>
+
+<!-- สไลด์ 3 -->
+<div class="slide">
+    <h2>Trends in future space innovation</h2>
+    <p>1. การท่องเที่ยวอวกาศเชิงพาณิชย์ (SpaceX, Blue Origin)<br>
+       2. สถานีอวกาศส่วนตัว & โรงแรมอวกาศ<br>
+       3. การทำเหมืองในอวกาศ (Asteroid Mining)<br>
+       4. การตั้งถิ่นฐานบนดวงจันทร์และดาวอังคาร</p>
+    <img src="https://bendeta.com/wp-content/uploads/2022/10/satellite-768x512.jpg" alt="Mars Colony">
+    <div class="slide-number">3 / 8</div>
+</div>
+
+<!-- สไลด์ 4 -->
+<div class="slide">
+    <h2>Technologies driving space innovation</h2>
+    <p>• ยานขับเคลื่อนไฟฟ้า/นิวเคลียร์<br>
+       • AI และหุ่นยนต์สำหรับสำรวจ<br>
+       • 3D Printing ในอวกาศ<br>
+       • ระบบสื่อสารควอนตัมระหว่างดาวเคราะห์</p>
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Robot in Space">
+    <div class="slide-number">4 / 8</div>
+</div>
+
+<!-- สไลด์ 5 -->
+<div class="slide">
+    <h2>Important global projects</h2>
+    <p>• Artemis Program (NASA) – กลับสู่ดวงจันทร์ภายในปี 2026<br>
+       • Starship (SpaceX) – ยานขนส่งมวลชนสู่ดาวอังคาร<br>
+       • Tianwen & Tiangong (จีน) – สำรวจดาวอังคารและสถานีอวกาศ<br>
+       • โครงการอวกาศไทย – เช่น THEOS-2, ดาวเทียมขนาดเล็ก</p>
+    <img src="https://f.ptcdn.info/068/079/000/rlmzjjokdq8WwN91OTh-o.jpg" alt="Space Station">
+    <div class="slide-number">5 / 8</div>
+</div>
+
+<!-- สไลด์ 6 -->
+<div class="slide">
+    <h2>Role of youth and students</h2>
+    <p>• เรียนรู้ STEM (วิทยาศาสตร์ เทคโนโลยี วิศวกรรม คณิตศาสตร์)<br>
+       • เข้าร่วมการแข่งขันอวกาศ (เช่น CanSat, Space Hackathon)<br>
+       • พัฒนาดาวเทียมขนาดเล็ก (CubeSat)<br>
+       • สนับสนุนนโยบายอวกาศของประเทศ</p>
+    <img src="https://spaceinspirium.gistda.or.th/wp-content/uploads/2018/04/IMG_3836-2.jpg" alt="Students in Space Lab">
+    <div class="slide-number">6 / 8</div>
+</div>
+
+<!-- สไลด์ 7 -->
+<div class="slide">
+    <h2>Conclusion</h2>
+    <p><em>“Space is not just a goal for astronauts…<br>
+       but it is the future of everyone on Earth”</em></p>
+    <p>นวัตกรรมอวกาศ = โอกาส + ความท้าทาย<br>
+       ทุกคนสามารถมีส่วนร่วมได้ ไม่ว่าจะอยู่ในสาขาใด</p>
+    <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Future of Space">
+    <div class="slide-number">7 / 8</div>
+</div>
+
+<!-- สไลด์ 8 -->
+<div class="slide">
+    <h1>Thank you</h1>
+    <p>By นาย พีรพัฒน์ มันกระโทก</p>
+    <div style="margin-top: 2rem;">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+    <div class="slide-number">8 / 8</div>
+</div>
+
+
+<button id="prev" class="nav-btn">‹</button>
+<button id="next" class="nav-btn">›</button>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    function showSlide(index) {
+        if (index < 0) index = slides.length - 1;
+        if (index >= slides.length) index = 0;
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+        current = index;
+    }
+
+    document.getElementById('prev').addEventListener('click', () => showSlide(current - 1));
+    document.getElementById('next').addEventListener('click', () => showSlide(current + 1));
+
+    
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') showSlide(current - 1);
+        if (e.key === 'ArrowRight') showSlide(current + 1);
+    });
+</script>
+
+</body>
+</html>
